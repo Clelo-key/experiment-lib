@@ -4,7 +4,7 @@
 一些实验与案例
 
 #### 清单
-GlobalResponse 全局响应与统一异常
+GlobalResponse 全局响应与统一异常处理
 
 
 
