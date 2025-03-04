@@ -1,7 +1,7 @@
 # experiment-lib
 
 #### 介绍
-一些实验与案例，也许在以后可以逐渐发展然后被整合为一个SpringClude项目？？？
+一些实验与案例，也许在以后可以逐渐发展然后被整合为一个Springcloud项目？？？
 
 #### 清单
 GlobalResponse 全局响应与统一异常处理
