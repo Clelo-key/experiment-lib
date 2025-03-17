@@ -17,6 +17,5 @@ public class DynamicProxyTest {
         ActingDynamicProxy politeDynamicProxy = new ActingDynamicProxy();
         MeetingUser bind = (MeetingUser) politeDynamicProxy.bind(new User("张三", 19), new Meal());
         bind.meeting();
-
     }
 }

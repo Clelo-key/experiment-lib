@@ -16,5 +16,7 @@ public class proxyTest {
 //        user.meeting();
         PoliteUserProxy politeUserProxy = new PoliteUserProxy(user);
         politeUserProxy.meeting();
+        System.out.println("_________________________");
+        user.meeting();
     }
 }
