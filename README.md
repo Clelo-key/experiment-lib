@@ -5,7 +5,8 @@
 
 #### 清单
 GlobalResponse 全局响应与统一异常处理
-DynamicProxy   AOP动态代理
+DynamicProxy   AOP动态代理原理
+Knif4JOpenApi   Api文档处理
 
 
 
