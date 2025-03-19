@@ -1,0 +1,10 @@
+api:
+  custom:
+    author: fye
+    description: Knif4j+OpenApi
+    title: 集成APi文档测试
+    version: 1.0
+    enable: true
+logging:
+  level:
+    root: info

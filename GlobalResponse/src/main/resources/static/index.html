@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #sendRequest{
+      width: 100px;
+      height: 30px;
+      border-radius: 28px;
+      box-shadow: 6px 5px 10px #666666;
+      color: #ef9494;
+      font-size: 15px;
+      text-decoration: none;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+Hello World
+<br>
+<label for="value">输入</label>
+<input id="value" type="number"/>
+<br>
+<button id="sendRequest">发送请求</button>
+<button id="delete">发起删除</button>
+<br><br>
+请求到的信息:<span id="info"></span>
+</body>
+<script>
+
+  // 获取按钮
+  let sendButton=document.getElementById("sendRequest")
+  // 监听按钮点击事件
+  const url='http://localhost:8080/user?id=';
+  const Http = new XMLHttpRequest();
+
+  sendButton.addEventListener('click',()=>{
+    // 获取值
+    let inputValue= document.getElementById("value").value
+    Http.open("GET", url+inputValue);
+    Http.send();
+    // 等待服务器响应后回调
+    Http.onreadystatechange = (e) => {
+      let node=document.getElementById("info")
+      node.innerText=Http.responseText
+    }
+  })
+
+
+  let loginOutButton= document.getElementById("delete")
+  loginOutButton.addEventListener("click",(e)=>{
+    // 获取值
+    let inputValue= document.getElementById("value").value
+    Http.open("DELETE", url+inputValue);
+    Http.send();
+    // 等待服务器响应后回调
+    Http.onreadystatechange = (e) => {
+      let node=document.getElementById("info")
+      node.innerText=Http.responseText
+    }
+  })
+
+</script>
+</html>
