@@ -1,7 +1,7 @@
 # experiment-lib
 
 #### Description
-一些实验
+some experiment
 
 #### Software Architecture
 Software architecture description
