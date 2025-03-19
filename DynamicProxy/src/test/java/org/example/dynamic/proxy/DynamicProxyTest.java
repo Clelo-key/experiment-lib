@@ -2,6 +2,7 @@ package org.example.dynamic.proxy;
 
 import org.example.function.MeetingUser;
 import org.example.pojo.Meal;
+import org.example.pojo.Polite;
 import org.example.pojo.User;
 import org.junit.jupiter.api.Test;
 
@@ -13,9 +14,12 @@ import org.junit.jupiter.api.Test;
  */
 public class DynamicProxyTest {
     @Test
-    void  test(){
+    void test() {
         ActingDynamicProxy politeDynamicProxy = new ActingDynamicProxy();
-        MeetingUser bind = (MeetingUser) politeDynamicProxy.bind(new User("张三", 19), new Meal());
-        bind.meeting();
+        MeetingUser proxyMeal = (MeetingUser) politeDynamicProxy.bind(new User("张三", 19), new Meal());
+        proxyMeal.meeting();
+        System.out.println("_________________");
+        MeetingUser proxyPolite = (MeetingUser) politeDynamicProxy.bind(new User("张三", 19), new Polite());
+        proxyPolite.meeting();
     }
 }

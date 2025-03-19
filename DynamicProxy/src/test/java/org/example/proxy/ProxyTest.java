@@ -8,8 +8,9 @@ import org.junit.jupiter.api.Test;
  * @Author: Fly
  * @CreateTime: 2024-11-24
  * @Version: 1.0
+ * @Description: 静态代理测试
  */
-public class proxyTest {
+public class ProxyTest {
     @Test
     public void test() {
         User user = new User("张三",18);
