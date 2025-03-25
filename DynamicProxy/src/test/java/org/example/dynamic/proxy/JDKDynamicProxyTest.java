@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * @CreateTime: 2024-11-25
  * @Version: 1.0
  */
-public class JVMDynamicProxyTest {
+public class JDKDynamicProxyTest {
     @Test
     void test() {
         JDKDynamicProxy politeDynamicProxy = new JDKDynamicProxy();
