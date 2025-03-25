@@ -37,6 +37,7 @@ buildNumber.properties
 
 ## Directory-based project format:
 .idea
+<<<<<<< HEAD
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
@@ -54,6 +55,8 @@ buildNumber.properties
 # Gradle:
 # .idea/gradle.xml
 # .idea/libraries
+=======
+>>>>>>> lib-github/main
 
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
