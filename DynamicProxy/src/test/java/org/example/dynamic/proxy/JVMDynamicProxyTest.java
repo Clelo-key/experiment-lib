@@ -12,10 +12,10 @@ import org.junit.jupiter.api.Test;
  * @CreateTime: 2024-11-25
  * @Version: 1.0
  */
-public class DynamicProxyTest {
+public class JVMDynamicProxyTest {
     @Test
     void test() {
-        ActingDynamicProxy politeDynamicProxy = new ActingDynamicProxy();
+        JDKDynamicProxy politeDynamicProxy = new JDKDynamicProxy();
         MeetingUser proxyMeal = (MeetingUser) politeDynamicProxy.bind(new User("张三", 19), new Meal());
         proxyMeal.meeting();
         System.out.println("_________________");

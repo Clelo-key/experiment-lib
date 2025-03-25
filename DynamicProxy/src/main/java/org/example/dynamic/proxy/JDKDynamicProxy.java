@@ -9,9 +9,11 @@ import java.lang.reflect.Proxy;
  * @Author: Fly
  * @CreateTime: 2024-11-24
  * @Version: 1.0
- * @Description: 动态代理类，动态地为所有对象提供额外的职能。
+ * @Description: JDK 动态代理类，动态地为所有对象提供额外的职能。
+ * JDK 动态代理
+ * 基于接口的动态代理
  */
-public class ActingDynamicProxy implements InvocationHandler {
+public class JDKDynamicProxy implements InvocationHandler {
     private Object target; // 代理对象
     private Object proxy; // 额外职能
 
@@ -35,7 +37,6 @@ public class ActingDynamicProxy implements InvocationHandler {
         start.invoke(this.proxy, targetName);
         method.invoke(this.target, args);
         end.invoke(this.proxy, targetName);
-
         return null;
     }
 }

@@ -7,7 +7,15 @@
         <option value="$PROJECT_DIR$/DynamicProxy/pom.xml" />
         <option value="$PROJECT_DIR$/GlobalResponse/pom.xml" />
         <option value="$PROJECT_DIR$/Knif4JOpenApi/pom.xml" />
+        <option value="$PROJECT_DIR$/AOPPrimer/pom.xml" />
+        <option value="$PROJECT_DIR$/DataStructure/pom.xml" />
+        <option value="$PROJECT_DIR$/AOPLogRecord/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/DataStructure/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">

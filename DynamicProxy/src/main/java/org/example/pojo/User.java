@@ -7,7 +7,7 @@ import org.example.function.MeetingUser;
  * @CreateTime: 2024-11-24
  * @Version: 1.0
  */
-public class User implements MeetingUser {
+public  class  User implements MeetingUser {
     private String name;
     private int age;
 
@@ -36,7 +36,8 @@ public class User implements MeetingUser {
 
     @Override
     public void meeting() {
-        System.out.println(this.getName() + " is meeting");
+        System.out.println(this.name + " is in a meeting");
+//        System.out.println(this.getName() + " is in a meeting");
     }
 
 }
