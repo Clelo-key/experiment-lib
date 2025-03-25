@@ -36,7 +36,12 @@ public class User implements MeetingUser {
 
     @Override
     public void meeting() {
+<<<<<<< HEAD
+        System.out.println(this.name + " is in a meeting");
+//        System.out.println(this.getName() + " is in a meeting");
+=======
         System.out.println(this.getName() + " is meeting");
+>>>>>>> lib-github/main
     }
 
 }
